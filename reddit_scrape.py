@@ -37,7 +37,7 @@ class RedditPost:
         self.image_info = {}
         response = requests.request("GET", self.url, headers=self.headers)
         soup = BeautifulSoup(response.text,'lxml')
-        self.data = soup.find_all("div", {"class": "_1poyrkZ7g36PawDueRza-J _11R7M_VOgKO1RJyRSRErT3 _1Qs6zz6oqdrQbR7yE_ntfY"})
+        self.data = soup.find("div", {"class": "_1poyrkZ7g36PawDueRza-J _11R7M_VOgKO1RJyRSRErT3 _1Qs6zz6oqdrQbR7yE_ntfY"})
         
         self.temp_data = self.data
         pattern = "https://preview.redd.it/(.\w+)+|https://i.redd.it/(.\w+)+"
