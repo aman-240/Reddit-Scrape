@@ -1,4 +1,6 @@
 # Reddit-Scrape
+This is done for educational purpose
+
 This repo will help you to scrape the latest post of any subreddit.
 
 If you want to use this repository, then follow the below steps:
